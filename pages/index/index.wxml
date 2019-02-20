@@ -1,0 +1,100 @@
+<wxc-panel border="{{false}}">
+
+<view class="page__hd">
+	<wxc-flex class="wrap" main="center" cross="center">
+			<view class="page__title">南风天好可怕的</view>
+	</wxc-flex>
+
+	<wxc-flex class="wrap" main="center" cross="center">
+<image src="../../common/assets/icons/haoyunbuzai.jpeg" style="width:200rpx" mode="widthFix" lazy-load="false"/>
+</wxc-flex>
+
+<wxc-flex class="wrap" main="center" cross="center">
+	<view class="page__desc">
+		但是你可以用科技改变生活呀！ 每位用户可以体验一个月噢
+	</view>
+</wxc-flex>
+<wxc-flex class="wrap" main="center" cross="center" wx:if="{{expire_date}}">
+	<view class="page__desc">
+		体验截止时间：{{expire_date}}
+	</view>
+</wxc-flex>
+<wxc-flex class="wrap" main="center" cross="center">
+	<view class="button-small-wrap" style="margin-top:10px;">
+	<wxc-button plain="{{true}}" type="info" bindtap="bindToPayment" btnStyle="{{style}}" >我现在就去交钱！
+		<wxc-icon color="" size="36" type="cart"></wxc-icon>
+	</wxc-button>
+	</view>
+	</wxc-flex>
+</view>
+</wxc-panel>
+
+<form bindsubmit="formSubmit" bindreset="formReset" report-submit='true'>
+<wxc-panel border="{{false}}" title="🤦🏻‍爱心设置">
+		<wxc-select
+		 bind:change="changeWind"
+		 name="wind"
+		 items="{{items}}"
+		 color="#343a40"
+		 checked="南"
+    />
+    </wxc-panel>
+
+
+
+<wxc-panel border="{{false}}" title="">
+
+	<!--<view class="input-wrap">
+		<picker
+		mode="selector"
+		range="{{hours}}"
+		range-key="name"
+		value="{{hour}}"
+		bindchange="bindHourChange"
+		  >
+		  	<wxc-list title="提醒时间" desc="每天{{hour}}点时" arrow="{{false}}"></wxc-list>
+		</picker>
+	</view>-->
+
+		<picker
+		  mode="region"
+		  bindchange="bindRegionChange"
+		  value="{{region}}"
+		  name="geo_position"
+		  disabled="{{regionLock}}"
+		  custom-item="{{customItem}}"
+		>
+
+		  	<wxc-list title="您的位置" desc="{{region[0]}}，{{region[1]}}，{{region[2]}}" arrow="{{!regionLock}}"></wxc-list>
+		</picker>
+
+</wxc-panel>
+
+    <wxc-panel border="{{false}}">
+		<view class="container" hover-class="none" hover-stop-propagation="false">
+			<view class="button-large-wrap">
+				<wxc-button
+				 bindsubmit="formSubmit"
+				 size="large"
+				 type="dark"
+				 value="{{orderText}}"
+				 _pid="{{_pid}}"
+				/>
+      </view>
+
+      <!-- <button form-type="submit">Submit</button> -->
+
+			<view class="button-large-wrap" wx:if="{{expire_date}}">
+				<wxc-button
+				 from-type="reset"
+				 bindtap="cancelSubscrire"
+				 plain="{{true}}"
+				 size="large"
+				 type="secondary"
+				 value="取消订阅"
+				 _pid="{{_pid}}"
+				/>
+			</view>
+    </view>
+    </wxc-panel>
+</form>

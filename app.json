@@ -1,0 +1,44 @@
+{
+  "pages": [
+     
+    "pages/index/index",
+    "pages/about/index",
+    "pages/login/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#f8f8f8",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "南风天来了",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#28b1b0",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "订阅提醒",
+        "iconPath":"common/assets/icons/feng.png",
+        "selectedIconPath":"common/assets/icons/feng.png"
+      },
+      {
+        "pagePath": "pages/about/index",
+        "text": "关于",
+        "iconPath":"common/assets/icons/iconset0103.png",
+        "selectedIconPath":"common/assets/icons/iconset0103.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "定位以获取当前位置天气信息"
+    }
+  },
+  "networkTimeout": {
+    "request": 10000
+  },
+  "debug": false
+}

@@ -1,0 +1,64 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.0",
+	"appid": "wx8d6ee30bff33c407",
+	"projectname": "%E5%8D%97%E9%A3%8E%E5%A4%A9%E6%9D%A5%E4%BA%86",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "分享",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": "1044",
+					"shareInfo": {
+						"groupName": "测试模拟群0",
+						"shareName": "yfXMy1t4wrLuIoBoXqazwjvYBwO4owdc01EqZYkoJBY@cr4dev",
+						"shareKey": "PswCLNOQfsvwqGRBHprzYmp9NLURTO6cIONNGbtZ3ufv76S86Fv4aLDvggRpSFiRsYgpCQIxhFOYA8VyZzP9xg~~"
+					}
+				},
+				{
+					"id": 1,
+					"name": "带参数",
+					"pathName": "pages/tools/oumu",
+					"query": "dianzu=0.2&dianya=3",
+					"scene": "1001"
+				}
+			]
+		}
+	}
+}

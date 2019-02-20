@@ -1,0 +1,48 @@
+<view class="about">
+  <!-- <view class="title">关于这款小程序</view> -->
+  <view class="content" hover-class="none" hover-stop-propagation="false">
+    <text>
+
+            这是一个帮助大家预防南风天的小程序，希望大家喜欢！有任何问题都可以反馈给我。  \r
+
+        我是@crazyphper，您可以添加我的微信，也可以访问我的主页 www.crazyphper.com  \r
+
+        如果您喜欢这款小程序，如果您想打赏我，可以点击下图后长按给我打赏。 \r
+
+        </text>
+
+    <wxc-cc class="demo">
+      <image style="margin-bottom:20px;" mode="widthFix" src="../../common/assets/qr/wepay-2.jpg"></image>
+    </wxc-cc>
+
+    <text class="ide_info">
+    <text style="font-size:20px">开发环境介绍</text> 编辑器：Atom \r 服务器：1核1G，Centos7.6 64x，Nginx，PHP7.1，Mysql5.7 \r 笔记本：MacBook Pro(Retina,15-incn,Mid 2015) \r 键盘： 雷蛇黑寡妇终极版2016 \r 鼠标： EC2-A \r
+    <!-- 小程序版本： 2.6.0 \r
+后端框架：Laravel 5.7.26  -->
+    </text>
+
+  </view>
+
+
+</view>
+
+<view class="listview-container">
+  <view class="history">
+    开发进程
+  </view>
+  <block wx:for="{{newsList}}" wx:key="">
+    <view class="playlog-item">
+      <view class="dotline">
+        <!-- 竖线 -->
+        <view class="line"></view>
+        <!-- 圆点 -->
+        <view class="dot"></view>
+        <!-- 时间戳 -->
+      </view>
+      <view class="content">
+        <text class="course">{{item.time}}</text>
+        <text class="chapter">{{item.content}}</text>
+      </view>
+    </view>
+  </block>
+</view>

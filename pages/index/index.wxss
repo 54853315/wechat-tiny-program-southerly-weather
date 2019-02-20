@@ -1,0 +1,34 @@
+/* pages/tools/oumu.wxss */
+@import '../../common/assets/style/layout.wxss';
+/* .input-wrap {
+position: relative;
+margin: 20rpx 10rpx 0 10rpx;
+} */
+
+.page__hd{
+
+}
+.page__title{
+    font-size:36rpx;
+}
+.page__desc{
+    font-size:26rpx;
+}
+.container {
+    width: 100%;
+    padding-top: 20rpx;
+    background: #fff;
+    text-align: center;
+}
+
+.container:after {
+    display: block;
+    content: " ";
+    clear:both;
+    visibility:hidden;
+    height:0;
+}
+
+.button-large-wrap {
+    margin-bottom: 10rpx;
+}

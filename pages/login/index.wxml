@@ -1,0 +1,4 @@
+<wxc-flex class="wrap" main="center" cross="center">
+    <wxc-button open-type="getUserInfo"
+    bindgetuserinfo="bindGetUserInfo" size="large" type="success" loading="{{false}}" value="请授权后再使用💅🏻"></wxc-button>
+  </wxc-flex>

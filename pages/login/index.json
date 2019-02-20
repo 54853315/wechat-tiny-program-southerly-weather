@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "请先授权",
+  "usingComponents": {
+    "wxc-button": "../../../packages/wxc-button/dist/index",
+    "wxc-flex": "../../../packages/wxc-flex/dist/index"
+  },
+  "component": true
+}

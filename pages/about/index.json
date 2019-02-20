@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText":"关于",
+    "backgroundColor": "#ffffff",
+    "usingComponents": {
+      "wxc-cc": "../../../packages/wxc-cc/dist/index"
+    },
+    "component": true
+}

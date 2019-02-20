@@ -1,0 +1,7 @@
+/* pages/login/index.wxss */
+
+.wrap {
+    display: block;
+    height: 100%;
+    padding: 10rpx;
+  }
